@@ -1,13 +1,9 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BiliBili_dl
 {
-    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class Rights
     {
         [JsonProperty("bp")]
@@ -227,7 +223,7 @@ namespace BiliBili_dl
         public bool NoCache { get; set; }
 
         [JsonProperty("pages")]
-        public List<Page> Pages { get; set; }
+        public List<Page> Pages { get; set; } = new List<Page>();
 
         [JsonProperty("subtitle")]
         public Subtitle Subtitle { get; set; }
@@ -726,7 +722,7 @@ namespace BiliBili_dl
         public string Episode { get; set; }
 
         [JsonProperty("videoData")]
-        public VideoData VideoData { get; set; }
+        public VideoData VideoData { get; set; } = new VideoData();
 
         [JsonProperty("upData")]
         public UpData UpData { get; set; }
@@ -779,6 +775,4 @@ namespace BiliBili_dl
         [JsonProperty("insertScripts")]
         public List<string> InsertScripts { get; set; }
     }
-
-
 }

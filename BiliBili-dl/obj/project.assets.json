@@ -237,11 +237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Loffr\\source\\repos\\BiliBili-dl\\BiliBili-dl\\BiliBili-dl.csproj",
+      "projectUniqueName": "C:\\Users\\Loffr\\Documents\\GitHub\\BiliBili-dl\\BiliBili-dl\\BiliBili-dl.csproj",
       "projectName": "BiliBili-dl",
-      "projectPath": "C:\\Users\\Loffr\\source\\repos\\BiliBili-dl\\BiliBili-dl\\BiliBili-dl.csproj",
+      "projectPath": "C:\\Users\\Loffr\\Documents\\GitHub\\BiliBili-dl\\BiliBili-dl\\BiliBili-dl.csproj",
       "packagesPath": "C:\\Users\\Loffr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Loffr\\source\\repos\\BiliBili-dl\\BiliBili-dl\\obj\\",
+      "outputPath": "C:\\Users\\Loffr\\Documents\\GitHub\\BiliBili-dl\\BiliBili-dl\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -303,7 +303,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21079.7\\RuntimeIdentifierGraph.json"
       }
     }
   }

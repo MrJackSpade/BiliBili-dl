@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BiliBili_dl
 {
-    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class SegmentBase
     {
         [JsonProperty("Initialization")]
@@ -81,7 +81,6 @@ namespace BiliBili_dl
         [JsonProperty("codecid")]
         public int Codecid { get; set; }
     }
-
 
     public class Dash
     {
@@ -181,6 +180,4 @@ namespace BiliBili_dl
         [JsonProperty("session")]
         public string Session { get; set; }
     }
-
-
 }
