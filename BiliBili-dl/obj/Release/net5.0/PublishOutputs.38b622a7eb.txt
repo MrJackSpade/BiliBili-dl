@@ -1,0 +1,8 @@
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\BiliBili-dl.exe
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\BiliBili-dl.dll
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\BiliBili-dl.deps.json
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\BiliBili-dl.runtimeconfig.json
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\BiliBili-dl.pdb
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\MimeTypesMap.dll
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\Newtonsoft.Json.dll
+C:\Users\Loffr\source\repos\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\publish\Penguin.Extensions.String.dll

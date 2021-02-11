@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BiliBili-dl": {
+      "commandName": "Project",
+      "commandLineArgs": "https://www.bilibili.com/video/BV1Vz4y1Z7ED"
+    }
+  }
+}
