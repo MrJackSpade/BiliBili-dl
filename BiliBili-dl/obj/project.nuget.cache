@@ -1,15 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "UrgfsVw31VeXyu71WYdMlv7SwNCcqK17+wIe6ghZ9HYhys5IPme9k4XwpKzDwCINa9ypBkiVPrNAX9q0mhNX6w==",
+  "dgSpecHash": "20k2rVxPVNSPc77as646kTlni9ZzQhQcj2/fLRtj9tJEX84FtJEpDqYyHXfiu4E7DES6DsxizvarSBjgJ3udwA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Loffr\\Documents\\GitHub\\BiliBili-dl\\BiliBili-dl\\BiliBili-dl.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Loffr\\.nuget\\packages\\mimetypesmap\\1.0.8\\mimetypesmap.1.0.8.nupkg.sha512",
     "C:\\Users\\Loffr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Loffr\\.nuget\\packages\\penguin.extensions.string\\5.0.2-ta9kklu\\penguin.extensions.string.5.0.2-ta9kklu.nupkg.sha512",
+    "C:\\Users\\Loffr\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Loffr\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Loffr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Loffr\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+    "C:\\Users\\Loffr\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\Loffr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Loffr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Loffr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Loffr\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Loffr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }

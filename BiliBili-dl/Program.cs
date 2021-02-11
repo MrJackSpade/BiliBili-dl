@@ -45,7 +45,7 @@ namespace BiliBili_dl
         /// </summary>
         private const string UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36";
 
-        private static readonly WebClient Client = new();
+        private static readonly WebClient Client = new WebClient();
 
         /// <summary>
         /// Sets header and returns un-gziped page source.
@@ -56,8 +56,8 @@ namespace BiliBili_dl
         {
             Client.Headers["User-Agent"] = UserAgent;
 
-            GZipStream responseStream = new(Client.OpenRead(url), CompressionMode.Decompress);
-            StreamReader reader = new(responseStream);
+            GZipStream responseStream = new GZipStream(Client.OpenRead(url), CompressionMode.Decompress);
+            StreamReader reader = new StreamReader(responseStream);
             return reader.ReadToEnd();
         }
 
@@ -69,7 +69,7 @@ namespace BiliBili_dl
         public static FileInfo FindFreeFile(params string[] pathParts)
         {
             //Obvious first try
-            FileInfo attemptedFile = new(Path.Combine(pathParts));
+            FileInfo attemptedFile = new FileInfo(Path.Combine(pathParts));
 
             string dir = attemptedFile.DirectoryName;
 
@@ -107,45 +107,49 @@ namespace BiliBili_dl
         private static async Task SafeDownload(string url, FileInfo target)
         {
             //Open a write stream for the file
-            using FileStream outputStream = target.OpenWrite();
-            WebResponse response = null;
-
-            do
+            using (FileStream outputStream = target.OpenWrite())
             {
-                try
-                {
-                    //Create a request for the Media
-                    HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                WebResponse response = null;
 
-                    //Tricky bit. If the position isn't 0 then we've already written data, which means its not our first request for the file.
-                    //If this is the case then the last loop was disconnected during download, so we're going to set the Range header for the
-                    //Request to attempted to start where the last download failed
-                    if (outputStream.Position != 0)
+                do
+                {
+                    try
                     {
-                        //Should this be + 1?                       //Use the content length specified in the last request
-                        request.AddRange(outputStream.Position + 1, long.Parse(response.Headers["Content-Length"]));
+                        //Create a request for the Media
+                        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+
+                        //Tricky bit. If the position isn't 0 then we've already written data, which means its not our first request for the file.
+                        //If this is the case then the last loop was disconnected during download, so we're going to set the Range header for the
+                        //Request to attempted to start where the last download failed
+                        if (outputStream.Position != 0)
+                        {
+                            //Should this be + 1?                       //Use the content length specified in the last request
+                            request.AddRange(outputStream.Position + 1, long.Parse(response.Headers["Content-Length"]));
+                        }
+
+                        request.Headers["User-Agent"] = UserAgent;
+
+                        response = await request.GetResponseAsync();
+
+                        using (Stream stream = response.GetResponseStream())
+                        {
+
+                            //Copy to the file output stream
+                            stream.CopyTo(outputStream);
+
+                            response.Dispose();
+
+                            //If we made it this far, then we didn't disconnect and its safe to break the loop
+                            break;
+                        }
                     }
-
-                    request.Headers["User-Agent"] = UserAgent;
-
-                    response = await request.GetResponseAsync();
-
-                    using Stream stream = response.GetResponseStream();
-
-                    //Copy to the file output stream
-                    stream.CopyTo(outputStream);
-
-                    response.Dispose();
-
-                    //If we made it this far, then we didn't disconnect and its safe to break the loop
-                    break;
-                }
-                catch (IOException ex) when (ex.Message.Contains("The response ended prematurely"))
-                {
-                    //If we hit this line, then we're not breaking and were going to loop back around for the request again
-                    Console.WriteLine($"Connection dropped with {outputStream.Position}/{response.Headers["Content-Length"]} bytes downloaded. Attempting continue...");
-                }
-            } while (true);
+                    catch (IOException ex) when (ex.Message.Contains("The response ended prematurely"))
+                    {
+                        //If we hit this line, then we're not breaking and were going to loop back around for the request again
+                        Console.WriteLine($"Connection dropped with {outputStream.Position}/{response.Headers["Content-Length"]} bytes downloaded. Attempting continue...");
+                    }
+                } while (true);
+            }
         }
 
         /// <summary>
@@ -184,7 +188,7 @@ namespace BiliBili_dl
         /// <returns>The exit code for the process</returns>
         private static int RunProcess(string fName, string args)
         {
-            ProcessStartInfo startInfo = new(fName)
+            ProcessStartInfo startInfo = new ProcessStartInfo(fName)
             {
                 WindowStyle = ProcessWindowStyle.Hidden,
                 Arguments = args
@@ -266,7 +270,7 @@ namespace BiliBili_dl
                     string pageSource = Request(requestUrl);
 
                     //Grab the playlist information if we haven't already
-                    playlistInfo ??= ExtractObject<InitialState>(pageSource, InitialStateStart, InitialStateEnd);
+                    playlistInfo = playlistInfo ?? ExtractObject<InitialState>(pageSource, InitialStateStart, InitialStateEnd);
 
                     //Grab information relevant to this video stream
                     PlayerInfo playerInfo = ExtractObject<PlayerInfo>(pageSource, PlayerInfoStart);
