@@ -261,7 +261,7 @@ namespace BiliBili_dl
 
                 string requestUrl = url;
 
-                InitialState playlistInfo = new InitialState();
+                InitialState playlistInfo = null;
 
                 do
                 {
