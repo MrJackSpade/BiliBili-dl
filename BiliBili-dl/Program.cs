@@ -263,6 +263,9 @@ namespace BiliBili_dl
 
         private static async Task Main(string[] args)
         {
+            //Unicode support for console
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             //Loop through each playlist
             foreach (string url in args)
             {
