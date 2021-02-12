@@ -257,7 +257,6 @@ namespace BiliBili_dl
                 Console.WriteLine("Checking playlist: " + url);
 
                 int page = 1;
-                int? maxPage = null;
 
                 string requestUrl = url;
 
@@ -294,7 +293,7 @@ namespace BiliBili_dl
                     requestUrl = $"{url}?p={page}";
 
                     //And continue, as long as we have something to continue to
-                } while (maxPage != null && page <= playlistInfo.VideoData.Pages.Count);
+                } while (page <= playlistInfo.VideoData.Pages.Count);
             }
         }
     }
