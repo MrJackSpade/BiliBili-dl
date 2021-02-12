@@ -68,7 +68,7 @@ namespace BiliBili_dl
                 } catch(Exception ex) when (tries++ < 3)
                 {
                     Console.WriteLine(ex.Message);
-                    Console.WriteLine("Tries [{}/3]...");
+                    Console.WriteLine($"Tries [{tries}/3]...");
                 }
             } while (true);
         }
