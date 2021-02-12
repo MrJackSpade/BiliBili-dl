@@ -127,7 +127,7 @@ namespace BiliBili_dl
                             request.AddRange(outputStream.Position + 1, long.Parse(response.Headers["Content-Length"]));
                         }
 
-                        request.Headers["User-Agent"] = UserAgent;
+                        request.UserAgent = UserAgent;
 
                         response = await request.GetResponseAsync();
 
