@@ -34,6 +34,54 @@
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
         }
       },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -93,6 +141,54 @@
         },
         "runtime": {
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
+        }
+      },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -156,6 +252,54 @@
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
         }
       },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -217,6 +361,54 @@
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
         }
       },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -276,6 +468,54 @@
         },
         "runtime": {
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
+        }
+      },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -367,6 +607,54 @@
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
         }
       },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -454,6 +742,54 @@
         },
         "runtime": {
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
+        }
+      },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -545,6 +881,54 @@
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
         }
       },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -634,6 +1018,54 @@
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
         }
       },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -693,6 +1125,54 @@
         },
         "runtime": {
           "lib/netstandard2.0/Penguin.Extensions.String.dll": {}
+        }
+      },
+      "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll": {}
+        }
+      },
+      "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Abstractions": "5.0.2-TA9KKLU"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Reflection.Extensions.dll": {}
+        }
+      },
+      "Penguin.Web.Http/1.0.1-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Reflection.Extensions": "5.0.2-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.Http.dll": {}
+        }
+      },
+      "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+        "type": "package",
+        "dependencies": {
+          "Penguin.Extensions.String": "5.0.2-TA9KKLU",
+          "Penguin.Web.Http": "1.0.1-TAA4YFP"
+        },
+        "compile": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Penguin.Web.WebClientEx.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -781,6 +1261,58 @@
         "lib/netstandard2.0/Penguin.Extensions.String.xml",
         "penguin.extensions.string.5.0.2-ta9kklu.nupkg.sha512",
         "penguin.extensions.string.nuspec"
+      ]
+    },
+    "Penguin.Reflection.Abstractions/5.0.2-TA9KKLU": {
+      "sha512": "q1wO24isYnwEHUZejTmqwTfD5PxBxLOx+4Px5oRLf7nFeDoxjV4tnG9SpLN9zgbr+9RUDNs+TBRwM5K8stYImg==",
+      "type": "package",
+      "path": "penguin.reflection.abstractions/5.0.2-ta9kklu",
+      "files": [
+        ".nupkg.metadata",
+        "License.txt",
+        "lib/netstandard2.0/Penguin.Reflection.Abstractions.dll",
+        "lib/netstandard2.0/Penguin.Reflection.Abstractions.xml",
+        "penguin.reflection.abstractions.5.0.2-ta9kklu.nupkg.sha512",
+        "penguin.reflection.abstractions.nuspec"
+      ]
+    },
+    "Penguin.Reflection.Extensions/5.0.2-TAA4YFP": {
+      "sha512": "ANSh3pMgw0ZkdoUWyQIYirBuAvPDuMEEW7/igIEnK0Lfj4zY8k59zd3tVvricApOuhCqZBTMrnRIML9mlPO56w==",
+      "type": "package",
+      "path": "penguin.reflection.extensions/5.0.2-taa4yfp",
+      "files": [
+        ".nupkg.metadata",
+        "License.txt",
+        "lib/netstandard2.0/Penguin.Reflection.Extensions.dll",
+        "lib/netstandard2.0/Penguin.Reflection.Extensions.xml",
+        "penguin.reflection.extensions.5.0.2-taa4yfp.nupkg.sha512",
+        "penguin.reflection.extensions.nuspec"
+      ]
+    },
+    "Penguin.Web.Http/1.0.1-TAA4YFP": {
+      "sha512": "7t1Xuun4xaevxkBxvy2oljGLMrRHDNHCMVfBJYvzJGr20R2ixXoz7hq0cDMMQjv0GPoimJnU9uYs1yDlK3gRbQ==",
+      "type": "package",
+      "path": "penguin.web.http/1.0.1-taa4yfp",
+      "files": [
+        ".nupkg.metadata",
+        "License.txt",
+        "lib/netstandard2.0/Penguin.Web.Http.dll",
+        "lib/netstandard2.0/Penguin.Web.Http.xml",
+        "penguin.web.http.1.0.1-taa4yfp.nupkg.sha512",
+        "penguin.web.http.nuspec"
+      ]
+    },
+    "Penguin.Web.WebClientEx/5.0.2-TAA4YFP": {
+      "sha512": "Lwvv9pocDSba/Joe6HykcOsuknkaGPbsdpP/QAHjoVgQXD/Vn/GcWu3jydUtyMe0WDnO5+gyJk0VWyxlSoPsRQ==",
+      "type": "package",
+      "path": "penguin.web.webclientex/5.0.2-taa4yfp",
+      "files": [
+        ".nupkg.metadata",
+        "License.txt",
+        "lib/netstandard2.0/Penguin.Web.WebClientEx.dll",
+        "lib/netstandard2.0/Penguin.Web.WebClientEx.xml",
+        "penguin.web.webclientex.5.0.2-taa4yfp.nupkg.sha512",
+        "penguin.web.webclientex.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -919,27 +1451,32 @@
     ".NETCoreApp,Version=v3.0": [
       "MimeTypesMap >= 1.0.8",
       "Newtonsoft.Json >= 12.0.3",
-      "Penguin.Extensions.String >= 5.0.2-TA9KKLU"
+      "Penguin.Extensions.String >= 5.0.2-TA9KKLU",
+      "Penguin.Web.WebClientEx >= 5.0.2-TAA4YFP"
     ],
     ".NETCoreApp,Version=v3.1": [
       "MimeTypesMap >= 1.0.8",
       "Newtonsoft.Json >= 12.0.3",
-      "Penguin.Extensions.String >= 5.0.2-TA9KKLU"
+      "Penguin.Extensions.String >= 5.0.2-TA9KKLU",
+      "Penguin.Web.WebClientEx >= 5.0.2-TAA4YFP"
     ],
     ".NETFramework,Version=v4.7.2": [
       "MimeTypesMap >= 1.0.8",
       "Newtonsoft.Json >= 12.0.3",
-      "Penguin.Extensions.String >= 5.0.2-TA9KKLU"
+      "Penguin.Extensions.String >= 5.0.2-TA9KKLU",
+      "Penguin.Web.WebClientEx >= 5.0.2-TAA4YFP"
     ],
     ".NETFramework,Version=v4.8": [
       "MimeTypesMap >= 1.0.8",
       "Newtonsoft.Json >= 12.0.3",
-      "Penguin.Extensions.String >= 5.0.2-TA9KKLU"
+      "Penguin.Extensions.String >= 5.0.2-TA9KKLU",
+      "Penguin.Web.WebClientEx >= 5.0.2-TAA4YFP"
     ],
     "net5.0": [
       "MimeTypesMap >= 1.0.8",
       "Newtonsoft.Json >= 12.0.3",
-      "Penguin.Extensions.String >= 5.0.2-TA9KKLU"
+      "Penguin.Extensions.String >= 5.0.2-TA9KKLU",
+      "Penguin.Web.WebClientEx >= 5.0.2-TAA4YFP"
     ]
   },
   "packageFolders": {
@@ -1019,6 +1556,10 @@
           "Penguin.Extensions.String": {
             "target": "Package",
             "version": "[5.0.2-TA9KKLU, )"
+          },
+          "Penguin.Web.WebClientEx": {
+            "target": "Package",
+            "version": "[5.0.2-TAA4YFP, )"
           }
         },
         "imports": [
@@ -1070,6 +1611,10 @@
           "Penguin.Extensions.String": {
             "target": "Package",
             "version": "[5.0.2-TA9KKLU, )"
+          },
+          "Penguin.Web.WebClientEx": {
+            "target": "Package",
+            "version": "[5.0.2-TAA4YFP, )"
           }
         },
         "imports": [
@@ -1109,6 +1654,10 @@
           "Penguin.Extensions.String": {
             "target": "Package",
             "version": "[5.0.2-TA9KKLU, )"
+          },
+          "Penguin.Web.WebClientEx": {
+            "target": "Package",
+            "version": "[5.0.2-TAA4YFP, )"
           }
         },
         "imports": [
@@ -1142,6 +1691,10 @@
           "Penguin.Extensions.String": {
             "target": "Package",
             "version": "[5.0.2-TA9KKLU, )"
+          },
+          "Penguin.Web.WebClientEx": {
+            "target": "Package",
+            "version": "[5.0.2-TAA4YFP, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21079.7\\RuntimeIdentifierGraph.json"
@@ -1160,6 +1713,10 @@
           "Penguin.Extensions.String": {
             "target": "Package",
             "version": "[5.0.2-TA9KKLU, )"
+          },
+          "Penguin.Web.WebClientEx": {
+            "target": "Package",
+            "version": "[5.0.2-TAA4YFP, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21079.7\\RuntimeIdentifierGraph.json"

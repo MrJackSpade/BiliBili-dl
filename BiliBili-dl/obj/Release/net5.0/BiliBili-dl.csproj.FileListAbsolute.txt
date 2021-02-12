@@ -38,3 +38,7 @@ C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\obj\Release\net5.0\BiliB
 C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\obj\Release\net5.0\ref\BiliBili-dl.dll
 C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\obj\Release\net5.0\BiliBili-dl.pdb
 C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\obj\Release\net5.0\BiliBili-dl.genruntimeconfig.cache
+C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\Penguin.Reflection.Abstractions.dll
+C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\Penguin.Reflection.Extensions.dll
+C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\Penguin.Web.Http.dll
+C:\Users\Loffr\Documents\GitHub\BiliBili-dl\BiliBili-dl\bin\Release\net5.0\Penguin.Web.WebClientEx.dll

@@ -77,6 +77,10 @@
             "Penguin.Extensions.String": {
               "target": "Package",
               "version": "[5.0.2-TA9KKLU, )"
+            },
+            "Penguin.Web.WebClientEx": {
+              "target": "Package",
+              "version": "[5.0.2-TAA4YFP, )"
             }
           },
           "imports": [
@@ -128,6 +132,10 @@
             "Penguin.Extensions.String": {
               "target": "Package",
               "version": "[5.0.2-TA9KKLU, )"
+            },
+            "Penguin.Web.WebClientEx": {
+              "target": "Package",
+              "version": "[5.0.2-TAA4YFP, )"
             }
           },
           "imports": [
@@ -167,6 +175,10 @@
             "Penguin.Extensions.String": {
               "target": "Package",
               "version": "[5.0.2-TA9KKLU, )"
+            },
+            "Penguin.Web.WebClientEx": {
+              "target": "Package",
+              "version": "[5.0.2-TAA4YFP, )"
             }
           },
           "imports": [
@@ -200,6 +212,10 @@
             "Penguin.Extensions.String": {
               "target": "Package",
               "version": "[5.0.2-TA9KKLU, )"
+            },
+            "Penguin.Web.WebClientEx": {
+              "target": "Package",
+              "version": "[5.0.2-TAA4YFP, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21079.7\\RuntimeIdentifierGraph.json"
@@ -218,6 +234,10 @@
             "Penguin.Extensions.String": {
               "target": "Package",
               "version": "[5.0.2-TA9KKLU, )"
+            },
+            "Penguin.Web.WebClientEx": {
+              "target": "Package",
+              "version": "[5.0.2-TAA4YFP, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21079.7\\RuntimeIdentifierGraph.json"

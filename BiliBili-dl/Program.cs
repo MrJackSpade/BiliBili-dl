@@ -1,6 +1,7 @@
 ﻿using HeyRed.Mime;
 using Newtonsoft.Json;
 using Penguin.Extensions.Strings;
+using Penguin.Web;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -45,7 +46,7 @@ namespace BiliBili_dl
         /// </summary>
         private const string UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36";
 
-        private static readonly WebClient Client = new WebClient();
+        private static readonly WebClientEx Client = new WebClientEx();
 
         /// <summary>
         /// Sets header and returns un-gziped page source.
@@ -54,11 +55,22 @@ namespace BiliBili_dl
         /// <returns></returns>
         private static string Request(string url)
         {
-            Client.Headers["User-Agent"] = UserAgent;
+            Client.TimeOut = int.MaxValue;
+           
+            int tries = 0;
 
-            GZipStream responseStream = new GZipStream(Client.OpenRead(url), CompressionMode.Decompress);
-            StreamReader reader = new StreamReader(responseStream);
-            return reader.ReadToEnd();
+            do
+            {
+                try
+                {
+                    Client.Headers["User-Agent"] = UserAgent;
+                    return Client.DownloadString(url);
+                } catch(Exception ex) when (tries++ < 3)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Tries [{}/3]...");
+                }
+            } while (true);
         }
 
         /// <summary>
